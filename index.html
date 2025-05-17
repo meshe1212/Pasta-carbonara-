@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spaghetti Carbonara</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Spaghetti Carbonara</h1>
+  <p class="rosa-text">En klassisk italiensk rätt med ägg, ost, pasta och bacon.</p>
+
+  </header>
+
+  <main>
+    <section class="image-section">
+      <img src="carbonara.jpg" alt="Spaghetti Carbonara" />
+    </section>
+
+    <div class="center-button">
+      <button class="btn" onclick="visaText()">Läs mer</button>
+    </div>
+
+    <section id="mer-info" style="display: none;">
+        <h1>Mmm så gott!!! </h1>
+        <h2>Är du inte sugen på lite pasta? För det är jag.</h2>
+        <p class="rosa rosa-text">Pasta carbonara är en klassisk italiensk pastarätt som kommer från Rom. Den lagas traditionellt med ägg, pecorinoost, svartpepar och guanciale (torkad griskind) - utan grädde! Kombinationen av krämig sås och salt, krispigt fläsk gör den till en älskad favorit över hela världen. Enkel snabb och otroligt god.</p>
+        <h2>Ingredienser</h2>
+        <ul>
+         <li>300 g spaghetti</li>
+         <li>4 dl pastasås mild ost</li>
+         <li>4 äggulor</li>
+         <li>120 g tärnad rökt skinka</li>
+         <li>1/2 tsk svartpeppar</li>
+         <li>75 g riven cheddar ost</li>
+         <li>Färsj oregano</li>
+        </ul>
+
+      <h2>Gör så här</h2>
+      <ol>
+        <li>Koka pastan enligt anvisningarna.</li>
+        <li>Stek baconet krispigt.</li>
+        <li>Vispa ihop ägg och parmesan.</li>
+        <li>Blanda den varma pastan med bacon och äggblandningen.</li>
+        <li>Krydda med salt och peppar. Klart!</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Recept av Leticia - Webbutveckling 1</p>
+  </footer>
+
+  <script>
+    function visaText() {
+      const info = document.getElementById("mer-info");
+      info.style.display = info.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
